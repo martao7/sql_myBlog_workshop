@@ -4,7 +4,7 @@ This application displays a blog with notes fetched from a backend server. Each 
 
 ## Live Demo :flamingo:
 
-[Click here to see the live demo!](https://my-834f93.netlify.app/)
+[Click here to see the live demo!](https://myblog-starlight-122f3f.netlify.app/)
 
 ## Backend server
 
