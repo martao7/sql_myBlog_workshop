@@ -6,8 +6,10 @@ function App() {
     <>
       <div className="site">
         <nav className="header">
-          <img src="./img/kiciaku.jpg" width="20%" />
-          <h1>My Blog</h1>
+          {/* <img src="./img/kiciaku.jpg" width="20%" /> */}
+          <h1>
+            <b>My Blog</b>
+          </h1>
         </nav>
         <Notes />
         <footer className="footer">
