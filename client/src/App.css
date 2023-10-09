@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
-    height: 100vh;
+    height: 120vh;
     width:120vh;
 }
 
@@ -20,7 +20,7 @@ h1 {
 }
 
 .header {
-    margin: 40px;
+    margin: 60px;
 }
 
 #addButton {
@@ -28,7 +28,7 @@ h1 {
     color: rgb(79, 76, 79);
     text-align: center;
     justify-content: center;
-    
+    font-size: small;
 }
 
 form {
@@ -43,13 +43,15 @@ form #note {
     background-color: rgb(242, 249, 240);
     width: 600px;
     height: 100px;
-    margin: 120px;
+    margin: 40px;
     text-align: center;
     justify-content: center;
 }
 
 .footer {
-    margin: 70px;
+    margin: 150px;
+    
+
 }
 
 img {
