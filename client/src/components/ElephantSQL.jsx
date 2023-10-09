@@ -7,7 +7,7 @@ function Notes() {
 
   const fetchNotes = () => {
     axios
-      .get("https://example-xtvq.onrender.com/posts")
+      .get("https://myblog-2yab.onrender.com/posts")
       .then((response) => {
         setNotes(response.data);
       })
@@ -21,7 +21,7 @@ function Notes() {
   }, []);
 
   const handleDelete = async (noteId) => {
-    await axios.delete(`https://example-xtvq.onrender.com/posts/${noteId}`);
+    await axios.delete(`https://myblog-2yab.onrender.com/posts/${noteId}`);
     setNotes((prevNotes) => prevNotes.filter((note) => note.id !== noteId));
     alert("Your note is successfully deleted");
   };
@@ -29,10 +29,10 @@ function Notes() {
   return (
     <div>
       <CreateNote setNotes={setNotes} />
+
       {notes.map((note) => (
         <div key={note.id}>
           <h2>{note.name}</h2>
-
           <img src={note.image_url} alt={note.name} />
 
           <p>Release Date: {note.release_date}</p>

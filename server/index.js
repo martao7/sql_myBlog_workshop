@@ -3,7 +3,7 @@ import cors from 'cors';
 import postsRouter from './routes/postsRouter.js';
 
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 
 app.use(cors({ origin: '*' })); // Enable Cross-Origin Resource Sharing (CORS)
 app.use(express.json()); // Parse incoming requests with JSON payloads

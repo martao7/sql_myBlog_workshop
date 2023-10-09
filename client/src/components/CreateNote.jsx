@@ -4,7 +4,8 @@ import axios from "axios";
 // eslint-disable-next-line react/prop-types
 function CreateNote({ setNotes }) {
   const [newNote, setNewNote] = useState({
-    name: "",
+    titel: "",
+    note: "",
     release_date: "",
     image_url: "",
   });
@@ -12,13 +13,14 @@ function CreateNote({ setNotes }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://example-xtvq.onrender.com/posts", newNote)
+      .post("https://myblog-2yab.onrender.com/posts", newNote)
       .then((response) => {
         console.log("Success:", response.data);
         alert("Your note was created successfully!");
         setNotes((prevNotes) => [...prevNotes, response.data]);
         setNewNote({
-          name: "",
+          titel: "",
+          note: "",
           release_date: "",
           image_url: "",
         });
@@ -36,10 +38,19 @@ function CreateNote({ setNotes }) {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        name="name"
-        value={newNote.name}
+        name="titel"
+        value={newNote.titel}
         onChange={handleChange}
-        placeholder="Name"
+        placeholder="Titel"
+        required
+      />
+
+      <input
+        type="text"
+        name="note"
+        value={newNote.note}
+        onChange={handleChange}
+        placeholder="Note"
         required
       />
 
