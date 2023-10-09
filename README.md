@@ -2,7 +2,7 @@
 
 This application displays a blog with notes fetched from a backend server. Each note contains information such as the titel, image URL and release date. You can also add/delete note to/from the blog.
 
-## Live Demo
+## Live Demo :flamingo:
 
 [Click here to see the live demo!](https://my-834f93.netlify.app/)
 
