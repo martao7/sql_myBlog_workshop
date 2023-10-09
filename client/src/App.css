@@ -4,8 +4,8 @@
     text-align: center;
     justify-content: center;
     padding-left: 100px;
-    background-image: url("./img/woman1.jpg");
-    /* background-image: url("https://pixabay.com/get/gea570bb0808f63ff79a321a8d1ada2994595ef0f5a539e605694817bc554e906bb42707a89def295660bab4ac98dbed342e1cf8976347b2b58ea33837ce0d2d9_1920.jpg"); */
+    /* background-image: url("./img/woman1.jpg"); */
+    background-image: url("https://pixabay.com/get/gea570bb0808f63ff79a321a8d1ada2994595ef0f5a539e605694817bc554e906bb42707a89def295660bab4ac98dbed342e1cf8976347b2b58ea33837ce0d2d9_1920.jpg"); 
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
