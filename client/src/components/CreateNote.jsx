@@ -46,15 +46,6 @@ function CreateNote({ setNotes }) {
       />
 
       <input
-        type="text"
-        name="note"
-        value={newNote.note}
-        onChange={handleChange}
-        placeholder="Note"
-        required
-      />
-
-      <input
         type="date"
         name="release_date"
         value={newNote.release_date}
@@ -70,7 +61,20 @@ function CreateNote({ setNotes }) {
         placeholder="Image URL"
         required
       />
-      <button type="submit">Add Note</button>
+
+      <input
+        type="text"
+        name="note"
+        id="note"
+        value={newNote.note}
+        onChange={handleChange}
+        placeholder="Note"
+        required
+      />
+
+      <button type="submit" id="addButton">
+        Add Note
+      </button>
     </form>
   );
 }

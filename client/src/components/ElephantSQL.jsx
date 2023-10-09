@@ -32,8 +32,9 @@ function Notes() {
 
       {notes.map((note) => (
         <div key={note.id}>
-          <h2>{note.name}</h2>
-          <img src={note.image_url} alt={note.name} />
+          <h2>{note.titel}</h2>
+          <p>{note.note}</p>
+          <img src={note.image_url} alt={note.titel} />
 
           <p>Release Date: {note.release_date}</p>
           {/* <button onClick={() => handleEdit(book.id)}>Edit Book</button> */}
