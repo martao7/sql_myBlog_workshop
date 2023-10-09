@@ -11,18 +11,19 @@ This application displays a blog with notes fetched from a backend server. Each 
 PostgreSQL connection settings(.env file):
 
 ```
-DB_HOST=your_server
-DB_USER=your_username
-DB_PASSWORD=your_password
+DB_HOST=server
+DB_USER=username
+DB_PASSWORD=password
 DB_PORT=5432
 ```
 
 Table in PostgreSQL database(ElephantSQL):
 
 ```sql
-CREATE TABLE posts (
+CREATE TABLE notes (
 id SERIAL PRIMARY KEY,
 titel VARCHAR(255),
+note text,
 image_url VARCHAR(255),
 release_date DATE
 );
