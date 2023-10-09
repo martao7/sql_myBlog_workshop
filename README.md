@@ -6,20 +6,24 @@ This application displays a blog with notes fetched from a backend server. Each 
 
 [Click here to see the live demo!](https://my-834f93.netlify.app/)
 
-### Backend server
+## Backend server
 
 PostgreSQL connection settings(.env file):
 
+```
 DB_HOST=your_server
 DB_USER=your_username
 DB_PASSWORD=your_password
 DB_PORT=5432
+```
 
 Table in PostgreSQL database(ElephantSQL):
 
+```sql
 CREATE TABLE posts (
 id SERIAL PRIMARY KEY,
 titel VARCHAR(255),
 image_url VARCHAR(255),
 release_date DATE
 );
+```
