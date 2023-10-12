@@ -7,7 +7,7 @@ function Notes() {
 
   const fetchNotes = () => {
     axios
-      .get("https://myblog-2yab.onrender.com/posts")
+      .get("https://myblog-2yab.onrender.com/notes")
       .then((response) => {
         setNotes(response.data);
       })
@@ -21,7 +21,7 @@ function Notes() {
   }, []);
 
   const handleDelete = async (noteId) => {
-    await axios.delete(`https://myblog-2yab.onrender.com/posts/${noteId}`);
+    await axios.delete(`https://myblog-2yab.onrender.com/notes/${noteId}`);
     setNotes((prevNotes) => prevNotes.filter((note) => note.id !== noteId));
     alert("Your note is successfully deleted");
   };

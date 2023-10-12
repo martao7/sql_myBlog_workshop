@@ -13,7 +13,7 @@ function CreateNote({ setNotes }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://myblog-2yab.onrender.com/posts", newNote)
+      .post("https://myblog-2yab.onrender.com/notes", newNote)
       .then((response) => {
         console.log("Success:", response.data);
         alert("Your note was created successfully!");
