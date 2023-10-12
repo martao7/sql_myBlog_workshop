@@ -1,20 +1,18 @@
 import Notes from "./components/ElephantSQL";
 import "./App.css";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <div className="site">
-        <nav className="header">
-          {/* <img src="./img/kiciaku.jpg" width="20%" /> */}
-          <h1>
-            <b>My Blog</b>
-          </h1>
-        </nav>
-        <Notes />
-        <footer className="footer">
-          <p>MyBlog | Copyright 2023</p>
-        </footer>
+        <Nav />
+        {/* <img src="./img/kiciaku.jpg" width="20%" /> */}
+        <div className="newNote">
+          <Notes />
+        </div>
+        <Footer />
       </div>
     </>
   );

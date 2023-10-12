@@ -29,7 +29,7 @@ export const updateNote = asyncHandler(async (req, res, next) => {
   const { id } = req.params;
   const { titel, note, image_url, release_date } = req.body;
   const result = await pool.query(
-    'UPDATE notes SET titel = $1, note = $2, imgae_url = $3, release_date = $4 WHERE id = $5 RETURNING *',
+    'UPDATE notes SET titel = $1, note = $2, image_url = $3, release_date = $4 WHERE id = $5 RETURNING *',
     [titel, note, image_url, release_date, id]
   );
   if (result.rows.length === 0) {

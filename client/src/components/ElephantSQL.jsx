@@ -36,9 +36,12 @@ function Notes() {
           <p>{note.note}</p>
           <img src={note.image_url} alt={note.titel} />
 
-          <p>Release Date: {note.release_date}</p>
+          <p>Date: {note.release_date}</p>
           {/* <button onClick={() => handleEdit(book.id)}>Edit Book</button> */}
-          <button onClick={() => handleDelete(note.id)}>Delete Note</button>
+          {/* /////DELETE BUTTON */}
+          <button onClick={() => handleDelete(note.id)} id="deleteButton">
+            Delete Note
+          </button>
         </div>
       ))}
     </div>

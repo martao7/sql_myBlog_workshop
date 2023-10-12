@@ -38,6 +38,7 @@ function CreateNote({ setNotes }) {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
+        id="titel"
         name="titel"
         value={newNote.titel}
         onChange={handleChange}
@@ -47,6 +48,7 @@ function CreateNote({ setNotes }) {
 
       <input
         type="date"
+        id="date"
         name="release_date"
         value={newNote.release_date}
         onChange={handleChange}
@@ -55,6 +57,7 @@ function CreateNote({ setNotes }) {
 
       <input
         type="text"
+        id="img"
         name="image_url"
         value={newNote.image_url}
         onChange={handleChange}
