@@ -16,7 +16,9 @@ function Nav() {
           </li>
         </ul>
       </header>
-      <h1>ShareBlog...</h1>
+      <div className="titel">
+        <h1>ShareBlog...</h1>
+      </div>
       <p>...to share with us whatever You want!</p>
     </div>
   );

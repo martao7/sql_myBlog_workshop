@@ -4,6 +4,7 @@
 	padding: 0;
 	text-align: center;
 	background-color: #b6c97c;
+  /* opacity: 0.9; */
 }
 
 .nav {
@@ -16,6 +17,9 @@
 .nav p {
   font-family: fantasy;
   font-size: larger;
+  text-align: center;
+  margin: 40px;
+  color: rgb(0, 0, 0);
 }
 
 .site {
@@ -29,13 +33,20 @@
 
 h1 {
     text-align: center;
-    color: rgb(65, 104, 24);
+    color: rgb(19, 22, 16);
     font-family:fantasy;
-    font-size: larger;
-    padding: 70px;
-    background-image: url("./img/rosaBlumen.png"); 
+    font-size: large;
+    padding: 40px;
+    margin: 20px;
+    
+}
+
+.titel {
+    /* background-image: url("./img/rosaBlumen.png");  */
+    background-image: url("https://i.otto.de/i/otto/b7fd6fca-6106-5fb2-a6d8-e1e9b3bfd753?w=2500&h=2262");
     background-color: #a9beea;
     background-size: cover;
+    opacity: 0.7;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -73,16 +84,20 @@ h2 {
   display: flex;
   justify-content: space-around;
   /* background: #eee; */
-  background-color: #d4ebfd;
+  /* background-color: #ddebf6; */
   padding: 25px 50px;
   margin: 0;
   list-style: none;
   color: black;
-  
 }
 
 .header li a {
   color: black;
+  border: 2px solid rgb(248, 248, 182);
+  border-radius: 0.3em;
+  margin: 10em;
+  padding: 0.8em;
+  background-color: rgb(248, 248, 182);
 }
 
 .header li a:hover {
