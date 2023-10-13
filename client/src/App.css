@@ -3,12 +3,19 @@
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-	/* overflow: hidden !important; */
-    background-color: #a6c157;
-    /* background-image: url("https://pixabay.com/get/g5009d32684de239850240d99f2e923f864fdcb365e7b07775f475e4edce8565907411fa9ae5e09185d9f6f7987ceb2d575262f2986b074de7d1afe3d446eacf6_1920.png");  */
-    
-    
-    
+	background-color: #b6c97c;
+}
+
+.nav {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
+  
+}
+
+.nav p {
+  font-family: fantasy;
+  font-size: larger;
 }
 
 .site {
@@ -17,13 +24,7 @@
     text-align: center;
     justify-content: center;
     padding-left: 100px;
-    /* background-image: url("./img/woman1.jpg"); */
-    /* background-image: url("https://pixabay.com/get/gea570bb0808f63ff79a321a8d1ada2994595ef0f5a539e605694817bc554e906bb42707a89def295660bab4ac98dbed342e1cf8976347b2b58ea33837ce0d2d9_1920.jpg");  */
-    background-repeat: no-repeat;
-    background-position: center;
     padding: 20px;
-    /* height: 120vh;
-    width:120vh; */
 }
 
 h1 {
@@ -31,7 +32,11 @@ h1 {
     color: rgb(65, 104, 24);
     font-family:fantasy;
     font-size: larger;
-    padding: 40px;
+    padding: 70px;
+    background-image: url("./img/rosaBlumen.jpeg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h2 {
@@ -44,14 +49,13 @@ h2 {
 }
 
 #addButton {
-    background-color: rgb(187, 212, 121);
+    background-color: rgb(211, 242, 125);
     color: rgb(79, 76, 79);
     text-align: center;
     justify-content: center;
     font-size: small;
     /* position: relative;  */
     margin: 5px;
-    /* display: block; */
 }
 
 #deleteButton {
@@ -62,70 +66,52 @@ h2 {
     font-size: small;
     /* position: relative;  */
     margin: 40px;
-    /* display: block; */
 }
 
-
-form #note {
-    /* border: 2px solid rgb(129, 204, 133); */
-    background-color: rgb(242, 249, 240);
-    border-radius: 0.4rem;
-    text-align: center;
-    justify-content: center;
-    font-size: small;
-    /* position: relative;  */
-    width: 25vw;
-    height: 10vh;
-    margin-right: 70px;
-    margin-left:70px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding: 10px;
-    
+.header ul {
+  display: flex;
+  justify-content: space-around;
+  /* background: #eee; */
+  background-color: #d4ebfd;
+  padding: 25px 50px;
+  margin: 0;
+  list-style: none;
+  color: black;
+  
 }
 
-form #titel {
-    border: 2px solid black;
-    border-radius: 0.2rem;
-    /* display: block; */
-    margin:10px;
-    text-align: center;
-    justify-content: center;
-    /* position: relative; */
-    width: 15vw;
-}
-form #img {
-    border: 2px solid black;
-    border-radius: 0.2rem;
-    /* display: block; */
-    margin:10px;
-    text-align: center;
-    width: 15vw;
-   
-}
-form #date {
-    border: 2px solid black;
-    border-radius: 0.2rem;
-    /* display: block; */
-    margin:10px;
-    text-align: center;
+.header li a {
+  color: black;
 }
 
-.footer {
-    margin: 150px;
+.header li a:hover {
+  color: rgb(125, 118, 118);
 }
 
-img {
-    border: 4px solid black;
+.newNote {
+  /* border: 4px solid rgb(40, 145, 49); */
+  padding: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.notes {
+  border: 2px solid #ad49ad;
 }
 
+form {
+  text-align: center;
+  /* border: 2px solid red; */
+  margin-right: 180px;
+  margin-left: 180px;
+}
 
 
 /* ///social media icons - footer */
 .footer {
     text-align: center;
+    
     /* background: #eee; */
-    padding: 35px 10px;
+    /* padding: 35px 10px; */
   }
 
   .copyright {
@@ -155,47 +141,6 @@ img {
   a.instagram {
     color: black;
   }
-   
-
-
   /* ///end of social media icons - footer */
 
 
-  .header ul {
-    display: flex;
-    justify-content: space-around;
-    background: #eee;
-    padding: 25px 50px;
-    margin: 0;
-    list-style: none;
-    color: black;
-    
-  }
-
-  .header li a {
-    color: black;
-  }
-
-  .header li a:hover {
-    color: rgb(125, 118, 118);
-  }
-
-
-  .newNote {
-    /* border: 4px solid rgb(40, 145, 49); */
-    padding: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-  .notes {
-    border: 2px solid #ad49ad;
-  }
-
-  form {
-    /* display: flex;
-    flex-direction: column; */
-    text-align: center;
-    /* border: 2px solid red; */
-    margin-right: 180px;
-    margin-left: 180px;
-  }

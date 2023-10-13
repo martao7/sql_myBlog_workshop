@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <div className="site">
-        <Nav />
+        <div>
+          <Nav />
+        </div>
         {/* <img src="./img/kiciaku.jpg" width="20%" /> */}
         <div className="newNote">
           <Notes />

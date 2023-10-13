@@ -76,7 +76,7 @@ function CreateNote({ setNotes }) {
       />
 
       <button type="submit" id="addButton">
-        Add Note
+        Add Your Note
       </button>
     </form>
   );
